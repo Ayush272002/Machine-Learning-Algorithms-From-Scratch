@@ -55,8 +55,8 @@ def main():
     # Reshape X to a 2D array if needed
     X = X.reshape(-1, 1)
 
-    # Split the dataset into training and testing sets test size = 0.01%
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.01, random_state=42)
+    # Split the dataset into training and testing sets test size = 0.2% i.e., 20%
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Train the model
     reg = LinearRegression()
@@ -75,13 +75,19 @@ def main():
     print("Mean squared error is  : ", mean_sq_err)
 
     # plot res
-    plt.scatter(X_train, y_train, color='blue', label='Training data')
-    plt.scatter(X_test, y_test, color='white', label='Testing data')
+    plt.scatter(X_train, y_train, color='green', label='Training data')
+    plt.scatter(X_test, y_test, color='yellow', label='Testing data')
+
+    # Plotting predicted data
+    plt.scatter(X_test, y_pred, color='black', label='Predicted data')
     plt.plot(X_train, slope * X_train + intercept, color='red', label='Regression line')
     plt.xlabel('X')
     plt.ylabel('Y')
     plt.title('Linear Regression')
     plt.legend()
+
+    # Add R^2 and mean squared error to the plot
+    plt.text(0.40, 0.97, f"R^2 value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}", transform=plt.gca().transAxes, fontsize=10, verticalalignment='top')
     plt.show()
 
 
