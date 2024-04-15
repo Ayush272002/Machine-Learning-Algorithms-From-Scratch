@@ -43,9 +43,8 @@ class LinearRegression:
         return [(self.slope * param) + self.intercept for param in x]
 
 
-def main():
+def process_data(file_path):
     # read the dataset
-    file_path = 'Linear Regression - Sheet1.csv'
     data = pd.read_csv(file_path)
 
     # preprocess the data
@@ -87,8 +86,17 @@ def main():
     plt.legend()
 
     # Add R^2 and mean squared error to the plot
-    plt.text(0.40, 0.97, f"R^2 value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}", transform=plt.gca().transAxes, fontsize=10, verticalalignment='top')
+    plt.text(0.40, 0.97, f"R^2 value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}", transform=plt.gca().transAxes,
+             fontsize=10, verticalalignment='top')
     plt.show()
+
+
+def main():
+    # Process first dataset
+    process_data('Linear Regression - Sheet1.csv')
+
+    # Process second dataset
+    process_data('Linear Regression - Sheet2.csv')
 
 
 if __name__ == "__main__":
