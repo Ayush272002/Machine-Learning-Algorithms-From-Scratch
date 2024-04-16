@@ -153,13 +153,13 @@ def process_and_plot_data(file_path, learning_rate=0.000001, num_iterations=1000
 
 def main():
     print("Dataset 1:")
-    process_and_plot_data("Linear Regression - Sheet1.csv")
+    process_and_plot_data("Data/Linear Regression - Sheet1.csv")
 
     print("\nDataset 2:")
-    process_and_plot_data("Linear Regression - Sheet2.csv")
+    process_and_plot_data("Data/Linear Regression - Sheet2.csv")
 
     print("\nDataset 3:")
-    process_and_plot_data("Linear Regression - Sheet3.csv")
+    process_and_plot_data("Data/Linear Regression - Sheet3.csv")
 
 
 if __name__ == "__main__":

@@ -115,15 +115,15 @@ def process_data(file_path):
 def main():
     # Process first dataset
     print("Dataset 1")
-    process_data('Linear Regression - Sheet1.csv')
+    process_data('Data/Linear Regression - Sheet1.csv')
 
     # Process second dataset
     print("\nDataset 2")
-    process_data('Linear Regression - Sheet2.csv')
+    process_data('Data/Linear Regression - Sheet2.csv')
 
     # Process third dataset
     print("\nDataset 3")
-    process_data('Linear Regression - Sheet3.csv')
+    process_data('Data/Linear Regression - Sheet3.csv')
 
 
 if __name__ == "__main__":

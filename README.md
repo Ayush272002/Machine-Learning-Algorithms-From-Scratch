@@ -84,7 +84,36 @@ This repository contains implementations of fundamental machine learning algorit
 
 ---
 #### 1.3 Multivariate Linear Regression
+**Description:** Multivariate linear regression is a type of linear regression where there are multiple independent variables. It models the relationship between these independent variables and a dependent variable.
 
+**Files:**
+- `Multi Variate Linear Regression.py`: Contains the implementation of multivariate linear regression.
+- `Multi Variate Linear Regression - Sheet1.csv`: Sample dataset for training and testing the multivariate linear regression model (Dataset 1).
+- `Multi Variate Linear Regression - Sheet2.csv`: Another sample dataset for training and testing the multivariate linear regression model (Dataset 2).
+- `Multi Variate Linear Regression - Sheet3.csv`: Another sample dataset for training and testing the multivariate linear regression model (Dataset 3).
+
+**Usage:**
+1. **Dependencies:** This implementation relies on several Python libraries:
+   - `numpy`: For numerical computations.
+   - `pandas`: For data manipulation and preprocessing.
+   - `matplotlib`: For data visualization.
+   - `sklearn`: Specifically, the `model_selection` module for train-test splitting.
+2. **Installation:** To install the required dependencies, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Running the Code:** Execute `Multi Variate Linear Regression.py` to train and test the multivariate linear regression model on the provided datasets.
+
+**Output:**
+- The learned parameters (coefficients) of the regression line are printed.
+- Evaluation metrics including the correlation coefficient, mean absolute error, root mean squared error, relative absolute error, root relative squared error, and coefficient of determination (R^2) are calculated and printed to evaluate the performance of the model.
+- A 3D scatter plot is generated to visualize the actual vs. predicted values, along with the regression plane.
+- For test 1
+- ![img.png](img/multivariate1.png)
+- For test 2
+- ![img_1.png](img/multivariate2.png)
+- For test 3
+- ![img_2.png](img/multivariate3.png)
 ---
 
 ## Unsupervised Learning
