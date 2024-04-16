@@ -100,6 +100,10 @@ def main():
     print("Dataset 2")
     process_data('Linear Regression - Sheet2.csv')
 
+    # Process third dataset
+    print("Dataset 3")
+    process_data('Linear Regression - Sheet3.csv')
+
 
 if __name__ == "__main__":
     main()
