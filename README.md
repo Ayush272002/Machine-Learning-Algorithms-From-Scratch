@@ -45,6 +45,8 @@ This repository contains implementations of fundamental machine learning algorit
 - ![img.png](img.png)
 - For test set 2
 - ![img_1.png](img_1.png)
+- For test 3
+- ![img_2.png](img_2.png)
 #### 1.2 Linear Regression with Gradient Descent
 
 #### 1.3 Multivariate Linear Regression
