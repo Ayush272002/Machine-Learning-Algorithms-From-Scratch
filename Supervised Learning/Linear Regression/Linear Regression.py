@@ -1,4 +1,4 @@
-# simple univariate linear regression
+# simple uni variate linear regression
 # author : Ayush
 
 import numpy as np
@@ -65,13 +65,13 @@ def process_data(file_path):
     # predict on data set
     y_pred = reg.predict(X_test.flatten())
 
-    # calculate R^2
+    # calculate R^2 (goodness of fit)
     r_sq = coff_of_deter(y_test, y_pred)
-    print("R^2 value : ", r_sq)
+    print("R^2 value (goodness of fit) : ", r_sq)
 
     # mean squared error
     mean_sq_err = np.mean((y_test - y_pred) ** 2)
-    print("Mean squared error is  : ", mean_sq_err)
+    print("Mean squared error is  : ", mean_sq_err, "\n")
 
     # plot res
     plt.scatter(X_train, y_train, color='green', label='Training data')
@@ -86,16 +86,18 @@ def process_data(file_path):
     plt.legend()
 
     # Add R^2 and mean squared error to the plot
-    plt.text(0.40, 0.97, f"R^2 value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}", transform=plt.gca().transAxes,
+    plt.text(0.40, 0.97, f"R^2 (goodness of fit) value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}", transform=plt.gca().transAxes,
              fontsize=10, verticalalignment='top')
     plt.show()
 
 
 def main():
     # Process first dataset
+    print("Dataset 1")
     process_data('Linear Regression - Sheet1.csv')
 
     # Process second dataset
+    print("Dataset 2")
     process_data('Linear Regression - Sheet2.csv')
 
 
