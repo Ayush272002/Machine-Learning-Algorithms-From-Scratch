@@ -98,7 +98,7 @@ def process_data(file_path):
     plt.legend()
 
     # Add R^2 and mean squared error to the plot
-    plt.text(0.40, 0.97, f"R^2 (goodness of fit) value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}",
+    plt.text(0.40, 0.97, f"$R^2$ (goodness of fit) value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}",
              transform=plt.gca().transAxes,
              fontsize=10, verticalalignment='top')
 
