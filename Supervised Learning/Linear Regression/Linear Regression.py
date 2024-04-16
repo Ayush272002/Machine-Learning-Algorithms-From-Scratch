@@ -3,6 +3,7 @@
 
 import numpy as np
 import pandas as pd
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
@@ -62,6 +63,9 @@ def process_data(file_path):
     slope = reg.best_fit(X_train.flatten(), y_train)
     intercept = reg.y_inter(X_train.flatten(), y_train)
 
+    # Print the regression line equation
+    print(f"Regression line equation: Y = {slope:.2f} * X + {intercept:.2f}")
+
     # predict on data set
     y_pred = reg.predict(X_test.flatten())
 
@@ -71,7 +75,15 @@ def process_data(file_path):
 
     # mean squared error
     mean_sq_err = np.mean((y_test - y_pred) ** 2)
-    print("Mean squared error is  : ", mean_sq_err, "\n")
+    print("Mean squared error is  : ", mean_sq_err)
+
+    # Calculate metrics based on custom regression line
+    custom_y_pred = slope * X_test.flatten() + intercept
+    correlation_coefficient = np.corrcoef(y_test, custom_y_pred)[0, 1]
+    mean_absolute_err = mean_absolute_error(y_test, custom_y_pred)
+    root_mean_sq_err = np.sqrt(mean_squared_error(y_test, custom_y_pred))
+    relative_absolute_err = mean_absolute_err / np.mean(y_test) * 100
+    root_relative_sq_err = root_mean_sq_err / np.mean(y_test) * 100
 
     # plot res
     plt.scatter(X_train, y_train, color='green', label='Training data')
@@ -86,8 +98,17 @@ def process_data(file_path):
     plt.legend()
 
     # Add R^2 and mean squared error to the plot
-    plt.text(0.40, 0.97, f"R^2 (goodness of fit) value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}", transform=plt.gca().transAxes,
+    plt.text(0.40, 0.97, f"R^2 (goodness of fit) value: {r_sq:.4f}\nMean squared error: {mean_sq_err:.4f}",
+             transform=plt.gca().transAxes,
              fontsize=10, verticalalignment='top')
+
+    additional_metrics_text = f"Reg line eqn: Y = {slope:.2f} * X + {intercept:.2f}\n"\
+                              f"Correlation coefficient: {correlation_coefficient:.4f}\n" \
+                              f"Mean absolute error: {mean_absolute_err:.4f}\n" \
+                              f"Root mean squared error: {root_mean_sq_err:.4f}\n" \
+                              f"Relative absolute error: {relative_absolute_err:.4f}%\n" \
+                              f"Root relative squared error: {root_relative_sq_err:.4f}%"
+    plt.text(0.40, 0.30, additional_metrics_text, transform=plt.gca().transAxes, fontsize=10, verticalalignment='top')
     plt.show()
 
 
@@ -97,11 +118,11 @@ def main():
     process_data('Linear Regression - Sheet1.csv')
 
     # Process second dataset
-    print("Dataset 2")
+    print("\nDataset 2")
     process_data('Linear Regression - Sheet2.csv')
 
     # Process third dataset
-    print("Dataset 3")
+    print("\nDataset 3")
     process_data('Linear Regression - Sheet3.csv')
 
 

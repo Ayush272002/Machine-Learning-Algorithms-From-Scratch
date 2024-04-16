@@ -6,7 +6,7 @@ This repository contains implementations of fundamental machine learning algorit
 
 1. [Supervised Learning](#supervised-learning)
    - [1. Linear Regression](#1-linear-regression)
-     - [1.1 Univariate Linear Regression](#11-univariate-linear-regression)
+     - [1.1 Univariate Linear Regression](#11-uni-variate-linear-regression)
      - [1.2 Linear Regression with Gradient Descent](#12-linear-regression-with-gradient-descent)
      - [1.3 Multivariate Linear Regression](#13-multivariate-linear-regression)
 2. [Unsupervised Learning](#unsupervised-learning)
@@ -22,7 +22,7 @@ This repository contains implementations of fundamental machine learning algorit
 **Description:** Uni variate linear regression is a type of linear regression where there is only one independent variable. It models the relationship between this independent variable and a dependent variable.
 
 **Files:**
-- `linear_regression.py`: Contains the implementation of univariate linear regression.
+- `linear_regression.py`: Contains the implementation of uni variate linear regression.
 - `Linear Regression - Sheet1.csv`: Sample dataset for training and testing the linear regression model (Dataset 1).
 - `Linear Regression - Sheet2.csv`: Another sample dataset for training and testing the linear regression model (Dataset 2).
 
@@ -42,11 +42,11 @@ This repository contains implementations of fundamental machine learning algorit
 - The coefficient of determination (R^2) value and mean squared error (MSE) are printed to evaluate the performance of the model.
 - A scatter plot is generated to visualize the training and testing data points, along with the regression line and predicted data points.
 - For test set 1
-- ![img.png](img.png)
+- ![img.png](img/img.png)
 - For test set 2
-- ![img_1.png](img_1.png)
+- ![img_1.png](img/img_1.png)
 - For test 3
-- ![img_2.png](img_2.png)
+- ![img_2.png](img/img_2.png)
 #### 1.2 Linear Regression with Gradient Descent
 
 #### 1.3 Multivariate Linear Regression
