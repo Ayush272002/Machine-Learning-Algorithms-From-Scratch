@@ -9,8 +9,8 @@ This repository contains implementations of fundamental machine learning algorit
 ## Table of Contents
 
 1. [Supervised Learning](Supervised%20Learning)
-    - 1.1 [Linear Regression](Supervised%20Learning/Linear Regression/README.md)
-    - 1.2 [Logistic Regression](Supervised%20Learning/Logistic Regression/README.md)
+    - 1.1 [Linear Regression](Supervised Learning/Linear Regression/README.md)
+    - 1.2 [Logistic Regression](Supervised Learning/Logistic Regression/README.md)
    
 2. Unsupervised Learning
 3. Reinforced Learning
