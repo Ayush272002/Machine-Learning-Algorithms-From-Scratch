@@ -10,7 +10,7 @@ This repository contains implementations of fundamental machine learning algorit
 
 1. [Supervised Learning](Supervised%20Learning)
     - 1.1 [Linear Regression](https://github.com/Ayush272002/Machine-Learning-Algorithms-From-Scratch/blob/main/Supervised%20Learning/Linear%20Regression/README.md)
-    - 1.2 [Logistic Regression](Supervised Learning/Logistic Regression/README.md)
+    - 1.2 [Logistic Regression](https://github.com/Ayush272002/Machine-Learning-Algorithms-From-Scratch/blob/main/Supervised%20Learning/Logistic%20Regression/README.md)
    
 2. Unsupervised Learning
 3. Reinforced Learning
