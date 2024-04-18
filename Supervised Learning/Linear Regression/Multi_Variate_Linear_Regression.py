@@ -130,6 +130,7 @@ def main(csv_file):
                           f"Root relative squared error: {root_relative_sq_error:.4f}%",
               transform=ax.transAxes, fontsize=10, verticalalignment='top',
               bbox=dict(facecolor='white', edgecolor='black', boxstyle='round,pad=0.5'))
+    plt.title('Multi Variate Linear Regression')
     plt.show()
 
 
