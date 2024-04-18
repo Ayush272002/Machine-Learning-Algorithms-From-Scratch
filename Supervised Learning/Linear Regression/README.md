@@ -6,7 +6,7 @@
 **Description:** Uni variate linear regression is a type of linear regression where there is only one independent variable. It models the relationship between this independent variable and a dependent variable.
 
 **Files:**
-- `Uni Variate Linear Regression.py`: Contains the implementation of uni variate linear regression.
+- `Uni_Variate_Linear_Regression.py`: Contains the implementation of uni variate linear regression.
 - `Linear Regression - Sheet1.csv`: Sample dataset for training and testing the uni variate linear regression model (Dataset 1).
 - `Linear Regression - Sheet2.csv`: Another sample dataset for training and testing the uni variate linear regression model (Dataset 2).
 - `Linear Regression - Sheet23.csv`: Another sample dataset for training and testing the uni variate linear regression model (Dataset 3).
@@ -18,7 +18,7 @@
    - `matplotlib`: For data visualization.
    - `sklearn`: Specifically, the `model_selection` module for train-test splitting.
    
-2. **Running the Code:** Execute `Uni Variate Linear Regression.py` to train and test the linear regression model on the provided datasets.
+2. **Running the Code:** Execute `Uni_Variate_Linear_Regression.py` to train and test the linear regression model on the provided datasets.
 
 **Output:**
 - The coefficient of determination (R^2) value and mean squared error (MSE) are printed to evaluate the performance of the model.
@@ -35,7 +35,7 @@
 **Description:** Linear regression with gradient descent is an optimization algorithm used to find the optimal parameters (slope and intercept) of a linear regression model by minimizing the cost function iteratively.
 
 **Files:**
-- `Linear Regression with Gradient Descent .py`: Contains the implementation of linear regression using gradient descent.
+- `Linear_Regression_with_Gradient_Descent.py`: Contains the implementation of linear regression using gradient descent.
 - `Linear Regression - Sheet1.csv`: Sample dataset for training and testing the linear regression model (Dataset 1).
 - `Linear Regression - Sheet2.csv`: Another sample dataset for training and testing the linear regression model (Dataset 2).
 - `Linear Regression - Sheet3.csv`: Another sample dataset for training and testing the linear regression model (Dataset 3).
@@ -47,7 +47,7 @@
    - `matplotlib`: For data visualization.
    - `sklearn`: Specifically, the `model_selection` module for train-test splitting.
 
-2. **Running the Code:** Execute `Linear Regression with Gradient Descent .py` to train and test the linear regression model using gradient descent on the provided datasets.
+2. **Running the Code:** Execute `Linear_Regression_with_Gradient_Descent.py` to train and test the linear regression model using gradient descent on the provided datasets.
 
 **Output:**
 - The learned parameters (slope and intercept) of the regression line are printed.
@@ -65,7 +65,7 @@
 **Description:** Multivariate linear regression is a type of linear regression where there are multiple independent variables. It models the relationship between these independent variables and a dependent variable.
 
 **Files:**
-- `Multi Variate Linear Regression.py`: Contains the implementation of multivariate linear regression.
+- `Multi_Variate_Linear_Regression.py`: Contains the implementation of multivariate linear regression.
 - `Multi Variate Linear Regression - Sheet1.csv`: Sample dataset for training and testing the multivariate linear regression model (Dataset 1).
 - `Multi Variate Linear Regression - Sheet2.csv`: Another sample dataset for training and testing the multivariate linear regression model (Dataset 2).
 - `Multi Variate Linear Regression - Sheet3.csv`: Another sample dataset for training and testing the multivariate linear regression model (Dataset 3).
@@ -77,7 +77,7 @@
    - `matplotlib`: For data visualization.
    - `sklearn`: Specifically, the `model_selection` module for train-test splitting.
 
-2. **Running the Code:** Execute `Multi Variate Linear Regression.py` to train and test the multivariate linear regression model on the provided datasets.
+2. **Running the Code:** Execute `Multi_Variate_Linear_Regression.py` to train and test the multivariate linear regression model on the provided datasets.
 
 **Output:**
 - The learned parameters (coefficients) of the regression line are printed.
