@@ -15,7 +15,6 @@ Logistic regression is a supervised learning algorithm used for binary classific
    - `pandas`: For data manipulation and preprocessing.
    - `matplotlib.pyplot`: For data visualization.
    - `sklearn.model_selection.train_test_split`: For splitting the dataset into train and test sets.
-   - `sklearn.metrics.accuracy_score`: For evaluating the model's accuracy.
 
 2. **Running the Code:**
    Execute `Logistic_Regression.py` to train and test the logistic regression model on the provided datasets.
